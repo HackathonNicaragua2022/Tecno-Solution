@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SistemaNotasF_H_E.MainPage">
+    <Grid Margin="30">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Image Source="Recurso/LogoOficial.png" Grid.Row="0" Grid.Column="0"/>
+        <StackLayout Grid.Column="1" Grid.Row="0"  Grid.ColumnSpan="2">
+            <Label Text="Instituto Nacional Francisca Hernández Espinoza" />
+            <Label Text="Ingreso de Notas" />
+        </StackLayout>
+        <Entry  Grid.Row="0" Grid.Column="4" Placeholder="192.168.0.1" 
+                x:Name="TxtIp"
+                TextChanged="TxtIp_TextChanged"/>
+
+        <FlexLayout Grid.Row="1" Grid.ColumnSpan="4">
+            <Picker Title="Selexione una Modalidad" 
+                        ItemsSource="{Binding ListaModalidades}" />
+            <Picker Title="Selexione el Grado" 
+                        ItemsSource="{Binding ListaGrados}" />
+            <Picker Title="Corte" 
+                        ItemsSource="{Binding ListaCorete}" />
+            <Picker Title="Año" 
+                        ItemsSource="{Binding ListaAño}" />
+        </FlexLayout>
+    </Grid>
+
+
+</ContentPage>

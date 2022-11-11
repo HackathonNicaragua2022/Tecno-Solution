@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECCC4AD1-0E6B-4BB2-A172-2F62AC5E7B1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Ctrl_Estudiantil.My.MyApplication</StartupObject>
+    <RootNamespace>Ctrl_Estudiantil</RootNamespace>
+    <AssemblyName>Ctrl_Estudiantil</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <UpdateUrl>http://jess92.site90.com/update/</UpdateUrl>
+    <ProductName>Control Estudiantil</ProductName>
+    <PublisherName>J E S S 92</PublisherName>
+    <SuiteName>J E S S 92</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ctrl_Estudiantil.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ctrl_Estudiantil.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2345F969106F8C364C4289F9F8689F162277D251</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FHernandez_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo_MiAu_3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CTRLKEY.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.11.3.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.11.3\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SpreadsheetLight, Version=3.5.0.0, Culture=neutral, PublicKeyToken=32fbb46dc1730c57, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpreadsheetLight.3.5.0\lib\netstandard2.0\SpreadsheetLight.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.5.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.7.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Reporting, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Ada369_en_Visual_Basic_Net_SQLServer\Ada369_en_Visual_Basic_Net_SQLServer\bin\Debug\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Ada369_en_Visual_Basic_Net_SQLServer\Ada369_en_Visual_Basic_Net_SQLServer\bin\Debug\Telerik.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIDC">
+      <HintPath>..\..\UIDC.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Datos\Cifrado\AES.vb" />
+    <Compile Include="Datos\Cifrado\conexion_manual.Designer.vb">
+      <DependentUpon>conexion_manual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Cifrado\conexion_manual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos\Cifrado\Desencriptacion.vb" />
+    <Compile Include="Datos\Cifrado\Encryptar_en_texto.vb" />
+    <Compile Include="Datos\DAlumnos.vb" />
+    <Compile Include="Datos\DConexion.vb" />
+    <Compile Include="Datos\DDatos.vb" />
+    <Compile Include="Datos\DDocentes.vb" />
+    <Compile Include="Datos\DDocentesAsignaciones.vb" />
+    <Compile Include="Datos\DMatricula.vb" />
+    <Compile Include="Datos\DM_Inicial.vb" />
+    <Compile Include="Datos\DNotas.vb" />
+    <Compile Include="Datos\DRendimiento.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Negocio\NDocentes.vb" />
+    <Compile Include="Negocio\NDocentes_Asignaciones.vb" />
+    <Compile Include="Negocio\NMatricula.vb" />
+    <Compile Include="Negocio\NM_Inicial.vb" />
+    <Compile Include="Negocio\NNotas.vb" />
+    <Compile Include="Negocio\NRendimiento.vb" />
+    <Compile Include="Reportes\DsPrincipal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPrincipal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DsPrincipal.vb">
+      <DependentUpon>DsPrincipal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRendimiento.Designer.vb">
+      <DependentUpon>frmRendimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRendimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Version 1.0\FrmNotas.Designer.vb">
+      <DependentUpon>FrmNotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Version 1.0\FrmNotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\BackUp\GENERAR_COPIAS_DE_SEGURIDAD.Designer.vb">
+      <DependentUpon>GENERAR_COPIAS_DE_SEGURIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\BackUp\GENERAR_COPIAS_DE_SEGURIDAD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Conf.vb" />
+    <Compile Include="Vistas\Educacion_Inicial\frmNotas_Preescolar.Designer.vb">
+      <DependentUpon>frmNotas_Preescolar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Educacion_Inicial\frmNotas_Preescolar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmAddAsignaturaA_Notas.Designer.vb">
+      <DependentUpon>FrmAddAsignaturaA_Notas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmAddAsignaturaA_Notas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmAdd_Semestre_y_Final.Designer.vb">
+      <DependentUpon>FrmAdd_Semestre_y_Final.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmAdd_Semestre_y_Final.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmAlumnos.Designer.vb">
+      <DependentUpon>FrmAlumnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmAlumnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Negocio\Nalumnos.vb" />
+    <Compile Include="Utilidades.vb" />
+    <Compile Include="Vistas\FrmConfig.Designer.vb">
+      <DependentUpon>FrmConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmCortes.Designer.vb">
+      <DependentUpon>FrmCortes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmCortes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmCorte_De_Notas.Designer.vb">
+      <DependentUpon>FrmCorte_De_Notas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmCorte_De_Notas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmDashboard.Designer.vb">
+      <DependentUpon>FrmDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmDocentes.Designer.vb">
+      <DependentUpon>FrmDocentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmDocentes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FRmEdicion de Corte.Designer.vb">
+      <DependentUpon>FRmEdicion de Corte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FRmEdicion de Corte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmGradosPorModalidad.Designer.vb">
+      <DependentUpon>FrmGradosPorModalidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmGradosPorModalidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Instalacion\Conexion_Pc_Secundaria.Designer.vb">
+      <DependentUpon>Conexion_Pc_Secundaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Instalacion\Conexion_Pc_Secundaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Instalacion\Eleccion_Servidor_o_Remoto.Designer.vb">
+      <DependentUpon>Eleccion_Servidor_o_Remoto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Instalacion\Eleccion_Servidor_o_Remoto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Instalacion\FrmInstalacion_del_Servidor_Sql_Server.Designer.vb">
+      <DependentUpon>FrmInstalacion_del_Servidor_Sql_Server.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Instalacion\FrmInstalacion_del_Servidor_Sql_Server.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmMatriculaInicial.Designer.vb">
+      <DependentUpon>FrmMatriculaInicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmMatriculaInicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmNotas_Por_Alumno.Designer.vb">
+      <DependentUpon>FrmNotas_Por_Alumno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmNotas_Por_Alumno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmSplash.Designer.vb">
+      <DependentUpon>FrmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Login\FrmConfiguracionInicial.Designer.vb">
+      <DependentUpon>FrmConfiguracionInicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Login\FrmConfiguracionInicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Login\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Login\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Login\FrmUsuarios.Designer.vb">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Login\FrmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Instalacion\Membresias.Designer.vb">
+      <DependentUpon>Membresias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Instalacion\Membresias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Datos\Cifrado\conexion_manual.resx">
+      <DependentUpon>conexion_manual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRendimiento.resx">
+      <DependentUpon>frmRendimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_Notas_Primer_Segundo.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Notas_Secundaria_Regular.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Notas_Tercero_Sexto.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Rendimiento_Academico_Primaria.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Rendimiento_Academico_Secundaria.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Rendimiento_Secundaria.rdlc" />
+    <EmbeddedResource Include="Reportes\Version 1.0\FrmNotas.resx">
+      <DependentUpon>FrmNotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Version 1.0\MostrarNotas_1_y_2.rdlc" />
+    <EmbeddedResource Include="Reportes\Version 1.0\MostrarNotas_Secundaria.rdlc" />
+    <EmbeddedResource Include="Reportes\Version 1.0\MostrarNotas_Tercero_Sexto.rdlc" />
+    <EmbeddedResource Include="Reportes\Version 1.0\Mostrar_Notas_Secundaria.rdlc" />
+    <EmbeddedResource Include="Reportes\Version 1.0\Ra_Primaria_2.rdlc" />
+    <EmbeddedResource Include="Reportes\Version 1.0\Ra_Secundaria_2.rdlc" />
+    <EmbeddedResource Include="Reportes\Version 1.0\Rendimiento_Secundaria.rdlc" />
+    <EmbeddedResource Include="Vistas\BackUp\GENERAR_COPIAS_DE_SEGURIDAD.resx">
+      <DependentUpon>GENERAR_COPIAS_DE_SEGURIDAD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Educacion_Inicial\frmNotas_Preescolar.resx">
+      <DependentUpon>frmNotas_Preescolar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmAddAsignaturaA_Notas.resx">
+      <DependentUpon>FrmAddAsignaturaA_Notas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmAdd_Semestre_y_Final.resx">
+      <DependentUpon>FrmAdd_Semestre_y_Final.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmAlumnos.resx">
+      <DependentUpon>FrmAlumnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmConfig.resx">
+      <DependentUpon>FrmConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmCortes.resx">
+      <DependentUpon>FrmCortes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmCorte_De_Notas.resx">
+      <DependentUpon>FrmCorte_De_Notas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmDocentes.resx">
+      <DependentUpon>FrmDocentes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FRmEdicion de Corte.resx">
+      <DependentUpon>FRmEdicion de Corte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmGradosPorModalidad.resx">
+      <DependentUpon>FrmGradosPorModalidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Instalacion\Conexion_Pc_Secundaria.resx">
+      <DependentUpon>Conexion_Pc_Secundaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Instalacion\Eleccion_Servidor_o_Remoto.resx">
+      <DependentUpon>Eleccion_Servidor_o_Remoto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Instalacion\FrmInstalacion_del_Servidor_Sql_Server.resx">
+      <DependentUpon>FrmInstalacion_del_Servidor_Sql_Server.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmMatriculaInicial.resx">
+      <DependentUpon>FrmMatriculaInicial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmNotas_Por_Alumno.resx">
+      <DependentUpon>FrmNotas_Por_Alumno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmSplash.resx">
+      <DependentUpon>FrmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Login\FrmConfiguracionInicial.resx">
+      <DependentUpon>FrmConfiguracionInicial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Login\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Instalacion\Membresias.resx">
+      <DependentUpon>Membresias.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CTRLKEY.pfx" />
+    <None Include="FHernandez_1_TemporaryKey.pfx" />
+    <None Include="FHernandez_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Reportes\DsPrincipal.xsc">
+      <DependentUpon>DsPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DsPrincipal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPrincipal.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\DsPrincipal.xss">
+      <DependentUpon>DsPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.jpg" />
+    <None Include="Resources\action.jpg" />
+    <None Include="Resources\red-32.jpg" />
+    <None Include="Resources\Red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono_Logo.ico" />
+    <Content Include="icono_Logo_4.ico" />
+    <Content Include="Logo-Oficial.ico" />
+    <Content Include="Logo.ico" />
+    <Content Include="Logo_1.ico" />
+    <Content Include="Logo_2.ico" />
+    <Content Include="Logo_3.ico" />
+    <Content Include="Logo_MiAu_3.ico" />
+    <None Include="Resources\Logo_MiAu_4.png" />
+    <None Include="Resources\lupa.png" />
+    <None Include="Resources\diario.png" />
+    <None Include="Resources\business-report.png" />
+    <None Include="Resources\Red1.jpg" />
+    <None Include="Resources\red-321.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DocumentFormat.OpenXml.xml">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="SpreadsheetLight.xml">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="System.IO.Packaging.xml">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.Reporting">
+      <Visible>False</Visible>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="UIDC">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
