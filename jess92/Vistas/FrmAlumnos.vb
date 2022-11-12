@@ -1444,6 +1444,11 @@ Public Class FrmAlumnos
             Me.CmbEGrado.Enabled = True
             Me.CmbESeccion.Enabled = True
         End If
+        If Opcion.Text = "Estudiantes Retirados" Then
+            Me.CmbECorte.Enabled = False
+        Else
+            Me.CmbECorte.Enabled = True
+        End If
         Buscar_Opciones_de_Alumnos()
     End Sub
 
@@ -1469,6 +1474,8 @@ Public Class FrmAlumnos
                     DtExcelenciaAcademica.DataSource = New Nalumnos().Alumnos_Reprobados_Detallados(Anio.Value, CmbECorte.SelectedValue, CmbEModalidad.Text.Trim, CmbETurno.Text.Trim, CmbEGrado.Text.Trim, CmbESeccion.Text.Trim)
                 Case "Matricula"
                     DtExcelenciaAcademica.DataSource = New Nalumnos().Matricula(Anio.Value)
+                Case "Estudiantes Retirados"
+                    DtExcelenciaAcademica.DataSource = New Nalumnos().Estudiantes_Retirados(Anio.Value, CmbECorte.SelectedValue, CmbEModalidad.Text.Trim, CmbETurno.Text.Trim, CmbEGrado.Text.Trim, CmbESeccion.Text.Trim)
                 Case Else
                     ' Utilidades.Mensaje("Opcion Incorrecta")
             End Select

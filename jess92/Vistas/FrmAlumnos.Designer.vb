@@ -1668,7 +1668,7 @@ Partial Class FrmAlumnos
         Me.Opcion.Font = New System.Drawing.Font("Roboto Medium", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Opcion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Opcion.FormattingEnabled = True
-        Me.Opcion.Items.AddRange(New Object() {"Excelencia académica", "Alumnos destacados", "Alumnos con aprendizaje Elemental", "Alumnos con aprendizaje Inicial", "Alumos Reprobados", "Alumos Reprobados en detalle", "Matricula"})
+        Me.Opcion.Items.AddRange(New Object() {"Excelencia académica", "Alumnos destacados", "Alumnos con aprendizaje Elemental", "Alumnos con aprendizaje Inicial", "Alumos Reprobados", "Alumos Reprobados en detalle", "Matricula", "Estudiantes Retirados"})
         Me.Opcion.Location = New System.Drawing.Point(18, 13)
         Me.Opcion.Name = "Opcion"
         Me.Opcion.Size = New System.Drawing.Size(290, 31)

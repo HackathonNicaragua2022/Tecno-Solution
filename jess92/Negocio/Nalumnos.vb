@@ -69,6 +69,10 @@
     Public Function Alumnos_Reprobados_Detallados(Año As Int32, Corte As Int32, Modalidad As String, Turno As String, Grado As String, Seccion As String) As DataTable
         Return New DAlumnos().Alumnos_Reprobados_Detallados(Año, Corte, Modalidad, Turno, Grado, Seccion)
     End Function
+
+    Public Function Estudiantes_Retirados(Año As Int32, Corte As Int32, Modalidad As String, Turno As String, Grado As String, Seccion As String) As DataTable
+        Return New DAlumnos().Estudiantes_Retirados(Año, Corte, Modalidad, Turno, Grado, Seccion)
+    End Function
     Public Function Matricula(Año As Int32) As DataTable
         Return New DAlumnos().Matricula(Año)
     End Function

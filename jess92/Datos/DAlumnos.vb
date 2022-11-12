@@ -484,6 +484,43 @@ Public Class DAlumnos
 
         Return Rpta
     End Function
+    Public Function Estudiantes_Retirados(año As Int32, corte As Int32, modalidad As String, turno As String, grado As String, seccion As String) As DataTable
+        Dim sqlcon As New SqlConnection
+        Dim SqlCmd As New SqlCommand
+        Dim Rpta As New DataTable
+        Try
+            sqlcon.ConnectionString = New DConexion().Cn
+            sqlcon.Open()
+
+            SqlCmd.CommandText = "Estudiantes_Retirados"
+            SqlCmd.CommandType = CommandType.StoredProcedure
+            SqlCmd.Connection = sqlcon
+
+            '       Parametros de la funcion
+            '""""""""""""""""""""""""""""""""""""""""
+
+            SqlCmd.Parameters.AddWithValue("@anio", año)
+            SqlCmd.Parameters.AddWithValue("@IdCorte", corte)
+            SqlCmd.Parameters.AddWithValue("@Modalidad", modalidad)
+            SqlCmd.Parameters.AddWithValue("@Turno", turno)
+            SqlCmd.Parameters.AddWithValue("@Grado", grado)
+            SqlCmd.Parameters.AddWithValue("@Seccion", seccion)
+
+
+            '       Ejecución del Comando
+            '""""""""""""""""""""""""""""""""""""""
+            Dim SqlDT As New SqlDataAdapter(SqlCmd)
+            SqlDT.Fill(Rpta)
+
+
+        Catch ex As Exception
+            Rpta = Nothing
+        Finally
+            If sqlcon.State = ConnectionState.Open Then sqlcon.Close()
+        End Try
+
+        Return Rpta
+    End Function
     Public Function Matricula(año As Int32) As DataTable
         Dim sqlcon As New SqlConnection
         Dim SqlCmd As New SqlCommand
