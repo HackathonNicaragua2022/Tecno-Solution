@@ -63,7 +63,9 @@ Public Class FrmDashboard
     End Sub
 
     Private Sub UI_CustomButton5_Click(sender As Object, e As EventArgs) Handles UI_CustomButton5.Click
-        GENERAR_COPIAS_DE_SEGURIDAD.ShowDialog()
+        'GENERAR_COPIAS_DE_SEGURIDAD.ShowDialog()
+        Dim frm As New BackUp
+        frm.ShowDialog()
     End Sub
 
     Private Sub UI_CustomButton6_Click(sender As Object, e As EventArgs) Handles UI_CustomButton6.Click

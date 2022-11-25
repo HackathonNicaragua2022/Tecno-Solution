@@ -160,7 +160,7 @@
     </Reference>
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIDC">
-      <HintPath>..\..\UIDC.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Jiuber\Proyectos\FHernandez - BackUp\UIDC.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
@@ -228,12 +228,6 @@
       <DependentUpon>FrmNotas.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\Version 1.0\FrmNotas.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\BackUp\GENERAR_COPIAS_DE_SEGURIDAD.Designer.vb">
-      <DependentUpon>GENERAR_COPIAS_DE_SEGURIDAD.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\BackUp\GENERAR_COPIAS_DE_SEGURIDAD.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\Conf.vb" />
@@ -381,6 +375,12 @@
     <Compile Include="Vistas\Instalacion\Membresias.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Vistas\Respaldos\BackUp.Designer.vb">
+      <DependentUpon>BackUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Respaldos\BackUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Datos\Cifrado\conexion_manual.resx">
@@ -408,9 +408,6 @@
     <EmbeddedResource Include="Reportes\Version 1.0\Ra_Primaria_2.rdlc" />
     <EmbeddedResource Include="Reportes\Version 1.0\Ra_Secundaria_2.rdlc" />
     <EmbeddedResource Include="Reportes\Version 1.0\Rendimiento_Secundaria.rdlc" />
-    <EmbeddedResource Include="Vistas\BackUp\GENERAR_COPIAS_DE_SEGURIDAD.resx">
-      <DependentUpon>GENERAR_COPIAS_DE_SEGURIDAD.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Educacion_Inicial\frmNotas_Preescolar.resx">
       <DependentUpon>frmNotas_Preescolar.vb</DependentUpon>
     </EmbeddedResource>
@@ -476,6 +473,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Instalacion\Membresias.resx">
       <DependentUpon>Membresias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Respaldos\BackUp.resx">
+      <DependentUpon>BackUp.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -558,62 +558,62 @@
   <ItemGroup>
     <PublishFile Include="DocumentFormat.OpenXml.xml">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="SpreadsheetLight.xml">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="System.IO.Packaging.xml">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="Telerik.Reporting">
       <Visible>False</Visible>
-      <PublishState>Auto</PublishState>
-      <IncludeHash>False</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="Telerik.ReportViewer.WinForms">
       <Visible>False</Visible>
-      <PublishState>Auto</PublishState>
-      <IncludeHash>False</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="UIDC">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>

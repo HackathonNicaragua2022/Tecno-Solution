@@ -15,7 +15,7 @@ Option Explicit On
 Namespace My
     
     <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.5.0.0"),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0"),  _
      Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
     Partial Friend NotInheritable Class MySettings
         Inherits Global.System.Configuration.ApplicationSettingsBase
@@ -57,8 +57,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Francisca_Hernandez_E;User ID=jess;Password=del1al1"& _ 
-            "0;Connect Timeout=240")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=JSANCHEZ\SQLEXPRESS;Initial Catalog=Francisca_Hernandez_E;Integrated "& _ 
+            "Security=True;Connect Timeout=3")>  _
         Public ReadOnly Property Cn() As String
             Get
                 Return CType(Me("Cn"),String)
@@ -89,8 +89,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=VEXIA-V156-V3\SQLEXPRESS;Initial Catalog=Ctrl_Estudiantil;Integrated "& _ 
-            "Security=True;Connect Timeout=240")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=VEXIA-V156-V3\SQLEXPRESS;Initial Catalog=Francisca_Hernandez_E;Integr"& _ 
+            "ated Security=True;Connect Timeout=240")>  _
         Public ReadOnly Property Francisca_Hernandez_EConnectionString() As String
             Get
                 Return CType(Me("Francisca_Hernandez_EConnectionString"),String)
