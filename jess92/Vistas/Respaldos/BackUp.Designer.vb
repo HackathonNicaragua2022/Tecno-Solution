@@ -23,19 +23,27 @@ Partial Class BackUp
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BackUp))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BackUp))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lblfecha = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.lblIDSERIAL = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblfrecuencia = New System.Windows.Forms.ComboBox()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.datalistado_cajas = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewCheckBoxColumn5 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.txtfechaSistema = New System.Windows.Forms.DateTimePicker()
         Me.txtRuta = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -44,25 +52,17 @@ Partial Class BackUp
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.lblfecha = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.lbldirectorio = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.datalistado_cajas = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewCheckBoxColumn5 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.txtfechaSistema = New System.Windows.Forms.DateTimePicker()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.ToolStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.datalistado_cajas, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -119,6 +119,61 @@ Partial Class BackUp
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(565, 277)
         Me.Panel2.TabIndex = 619
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.lblfecha)
+        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Controls.Add(Me.Label7)
+        Me.Panel3.Location = New System.Drawing.Point(-193, -24)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(933, 10)
+        Me.Panel3.TabIndex = 622
+        '
+        'lblfecha
+        '
+        Me.lblfecha.AutoSize = True
+        Me.lblfecha.BackColor = System.Drawing.Color.White
+        Me.lblfecha.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblfecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
+        Me.lblfecha.ForeColor = System.Drawing.Color.DimGray
+        Me.lblfecha.Location = New System.Drawing.Point(48, 269)
+        Me.lblfecha.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
+        Me.lblfecha.Name = "lblfecha"
+        Me.lblfecha.Size = New System.Drawing.Size(47, 13)
+        Me.lblfecha.TabIndex = 0
+        Me.lblfecha.Text = "Ninguna"
+        Me.lblfecha.Visible = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.White
+        Me.Label5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
+        Me.Label5.ForeColor = System.Drawing.Color.DimGray
+        Me.Label5.Location = New System.Drawing.Point(48, 212)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(33, 13)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Local"
+        Me.Label5.Visible = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.White
+        Me.Label7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.Label7.Location = New System.Drawing.Point(43, 155)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(127, 24)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "Ultima Copia"
+        Me.Label7.Visible = False
         '
         'Panel4
         '
@@ -177,6 +232,78 @@ Partial Class BackUp
         Me.lblfrecuencia.Name = "lblfrecuencia"
         Me.lblfrecuencia.Size = New System.Drawing.Size(119, 28)
         Me.lblfrecuencia.TabIndex = 596
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.datalistado_cajas)
+        Me.Panel5.Controls.Add(Me.txtfechaSistema)
+        Me.Panel5.Location = New System.Drawing.Point(-265, 94)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(10, 10)
+        Me.Panel5.TabIndex = 623
+        '
+        'datalistado_cajas
+        '
+        Me.datalistado_cajas.AllowUserToAddRows = False
+        Me.datalistado_cajas.AllowUserToDeleteRows = False
+        Me.datalistado_cajas.AllowUserToResizeRows = False
+        Me.datalistado_cajas.BackgroundColor = System.Drawing.Color.White
+        Me.datalistado_cajas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datalistado_cajas.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.datalistado_cajas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistado_cajas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewCheckBoxColumn5})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datalistado_cajas.DefaultCellStyle = DataGridViewCellStyle2
+        Me.datalistado_cajas.Location = New System.Drawing.Point(160, 36)
+        Me.datalistado_cajas.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
+        Me.datalistado_cajas.Name = "datalistado_cajas"
+        Me.datalistado_cajas.ReadOnly = True
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datalistado_cajas.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.datalistado_cajas.RowHeadersVisible = False
+        Me.datalistado_cajas.RowHeadersWidth = 5
+        Me.datalistado_cajas.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.ForestGreen
+        Me.datalistado_cajas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistado_cajas.Size = New System.Drawing.Size(56, 24)
+        Me.datalistado_cajas.TabIndex = 607
+        '
+        'DataGridViewCheckBoxColumn5
+        '
+        Me.DataGridViewCheckBoxColumn5.DataPropertyName = "Activo"
+        Me.DataGridViewCheckBoxColumn5.HeaderText = "Activo"
+        Me.DataGridViewCheckBoxColumn5.MinimumWidth = 12
+        Me.DataGridViewCheckBoxColumn5.Name = "DataGridViewCheckBoxColumn5"
+        Me.DataGridViewCheckBoxColumn5.ReadOnly = True
+        Me.DataGridViewCheckBoxColumn5.Width = 250
+        '
+        'txtfechaSistema
+        '
+        Me.txtfechaSistema.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.txtfechaSistema.Location = New System.Drawing.Point(115, 36)
+        Me.txtfechaSistema.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
+        Me.txtfechaSistema.Name = "txtfechaSistema"
+        Me.txtfechaSistema.Size = New System.Drawing.Size(57, 20)
+        Me.txtfechaSistema.TabIndex = 1
         '
         'txtRuta
         '
@@ -285,61 +412,6 @@ Partial Class BackUp
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.lblfecha)
-        Me.Panel3.Controls.Add(Me.Label5)
-        Me.Panel3.Controls.Add(Me.Label7)
-        Me.Panel3.Location = New System.Drawing.Point(-193, -24)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(933, 10)
-        Me.Panel3.TabIndex = 622
-        '
-        'lblfecha
-        '
-        Me.lblfecha.AutoSize = True
-        Me.lblfecha.BackColor = System.Drawing.Color.White
-        Me.lblfecha.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblfecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
-        Me.lblfecha.ForeColor = System.Drawing.Color.DimGray
-        Me.lblfecha.Location = New System.Drawing.Point(48, 269)
-        Me.lblfecha.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
-        Me.lblfecha.Name = "lblfecha"
-        Me.lblfecha.Size = New System.Drawing.Size(47, 13)
-        Me.lblfecha.TabIndex = 0
-        Me.lblfecha.Text = "Ninguna"
-        Me.lblfecha.Visible = False
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.White
-        Me.Label5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
-        Me.Label5.ForeColor = System.Drawing.Color.DimGray
-        Me.Label5.Location = New System.Drawing.Point(48, 212)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(33, 13)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Local"
-        Me.Label5.Visible = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.Label7.Location = New System.Drawing.Point(43, 155)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(127, 24)
-        Me.Label7.TabIndex = 0
-        Me.Label7.Text = "Ultima Copia"
-        Me.Label7.Visible = False
-        '
         'lbldirectorio
         '
         Me.lbldirectorio.BackColor = System.Drawing.Color.White
@@ -352,78 +424,6 @@ Partial Class BackUp
         Me.lbldirectorio.Size = New System.Drawing.Size(536, 145)
         Me.lbldirectorio.TabIndex = 0
         Me.lbldirectorio.Text = "Copia Guardada en:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "C:\BASE_MAESTRA_PERUINKA_INDUSTRIAS\BASE\BASEMACKEYS.bak" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.datalistado_cajas)
-        Me.Panel5.Controls.Add(Me.txtfechaSistema)
-        Me.Panel5.Location = New System.Drawing.Point(-265, 94)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(10, 10)
-        Me.Panel5.TabIndex = 623
-        '
-        'datalistado_cajas
-        '
-        Me.datalistado_cajas.AllowUserToAddRows = False
-        Me.datalistado_cajas.AllowUserToDeleteRows = False
-        Me.datalistado_cajas.AllowUserToResizeRows = False
-        Me.datalistado_cajas.BackgroundColor = System.Drawing.Color.White
-        Me.datalistado_cajas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datalistado_cajas.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.datalistado_cajas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datalistado_cajas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewCheckBoxColumn5})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.datalistado_cajas.DefaultCellStyle = DataGridViewCellStyle2
-        Me.datalistado_cajas.Location = New System.Drawing.Point(160, 36)
-        Me.datalistado_cajas.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
-        Me.datalistado_cajas.Name = "datalistado_cajas"
-        Me.datalistado_cajas.ReadOnly = True
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datalistado_cajas.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.datalistado_cajas.RowHeadersVisible = False
-        Me.datalistado_cajas.RowHeadersWidth = 5
-        Me.datalistado_cajas.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.ForestGreen
-        Me.datalistado_cajas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado_cajas.Size = New System.Drawing.Size(56, 24)
-        Me.datalistado_cajas.TabIndex = 607
-        '
-        'DataGridViewCheckBoxColumn5
-        '
-        Me.DataGridViewCheckBoxColumn5.DataPropertyName = "Activo"
-        Me.DataGridViewCheckBoxColumn5.HeaderText = "Activo"
-        Me.DataGridViewCheckBoxColumn5.MinimumWidth = 12
-        Me.DataGridViewCheckBoxColumn5.Name = "DataGridViewCheckBoxColumn5"
-        Me.DataGridViewCheckBoxColumn5.ReadOnly = True
-        Me.DataGridViewCheckBoxColumn5.Width = 250
-        '
-        'txtfechaSistema
-        '
-        Me.txtfechaSistema.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.txtfechaSistema.Location = New System.Drawing.Point(115, 36)
-        Me.txtfechaSistema.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
-        Me.txtfechaSistema.Name = "txtfechaSistema"
-        Me.txtfechaSistema.Size = New System.Drawing.Size(57, 20)
-        Me.txtfechaSistema.TabIndex = 1
         '
         'Timer1
         '
@@ -446,15 +446,15 @@ Partial Class BackUp
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        CType(Me.datalistado_cajas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        CType(Me.datalistado_cajas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

@@ -510,11 +510,13 @@ Public Class Form1
     End Sub
     Public Sub ReadCliente_O_Servidor()
         Try
-            'Dim doc As XmlDocument = New XmlDocument()
-            'doc.Load("Servidor_Remoto.xml")
-            'Dim root As XmlElement = doc.DocumentElement
-            'Dim Client_Server As String = root.Attributes.Item(0).Value
-            Cliente_o_Server = (aes.Decrypt(My.Settings.Servidor_o_Cliente, appPwdUnique, Integer.Parse("256")))
+            Dim doc As XmlDocument = New XmlDocument()
+            doc.Load("Servidor_Remoto.xml")
+            Dim root As XmlElement = doc.DocumentElement
+            Dim Client_Server As String = root.Attributes.Item(0).Value
+            ' Cliente_o_Server = (aes.Decrypt(My.Settings.Servidor_o_Cliente, appPwdUnique, Integer.Parse("256")))
+            Cliente_o_Server = (aes.Decrypt(Client_Server, appPwdUnique, Integer.Parse("256")))
+
             LblClienteServidor.Text = Cliente_o_Server
             LblClienteServidor.Visible = True
             LblClienteServidor.BringToFront()
@@ -615,12 +617,17 @@ Public Class Form1
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
         If PanelMenu.Width = 220 Then
-            tmOCULTAR.Enabled = True
+            PanelMenu.Width = 60
+            'mOCULTAR.Enabled = True
+            Me.Panel1.Top = Panel1.Top - 80
             ocultar_ImgSeleccion()
         ElseIf PanelMenu.Width = 60 Then
-            tmMOSTRAR.Enabled = True
+            PanelMenu.Width = 220
+            Me.Panel1.Top = Panel1.Top + 80
+            'tmMOSTRAR.Enabled = True
             ocultar_ImgSeleccion()
         End If
+        Activar_Boton(VentanaActiva)
     End Sub
 
     Private Sub tmOCULTAR_Tick(sender As Object, e As EventArgs) Handles tmOCULTAR.Tick
@@ -939,7 +946,13 @@ Public Class Form1
         press = True
     End Sub
 
-
+    Private Sub PanelMenu_Resize(sender As Object, e As EventArgs) Handles PanelMenu.Resize
+        With PanelMenu
+            PbLogo.Width = .Width / 2 + .Width / 4
+            PbLogo.Left = (.Width / 2) - (PbLogo.Width / 2)
+            PbLogo.Height = .Width / 3 + .Width / 4
+        End With
+    End Sub
 
     Private Sub PanelTitulo_MouseUp(sender As Object, e As MouseEventArgs) Handles PanelTitulo.MouseUp
         press = False

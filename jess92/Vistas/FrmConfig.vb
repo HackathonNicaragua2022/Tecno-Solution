@@ -217,7 +217,7 @@ Public Class FrmConfig
     End Sub
 
     Private Sub ChkCliente_Servidor_CheckedChanged(sender As Object, e As EventArgs) Handles ChkCliente_Servidor.CheckedChanged
-        CambiarEstado()
+
     End Sub
     Sub CambiarEstado()
         If ChkCliente_Servidor.Checked = True Then
@@ -237,5 +237,10 @@ Public Class FrmConfig
         Else
             ChkCliente_Servidor.Checked = True
         End If
+        CambiarEstado()
+    End Sub
+
+    Private Sub ChkCliente_Servidor_Click(sender As Object, e As EventArgs) Handles ChkCliente_Servidor.Click
+        CambiarEstado()
     End Sub
 End Class

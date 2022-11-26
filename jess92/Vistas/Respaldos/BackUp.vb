@@ -216,7 +216,7 @@ Public Class BackUp
     Sub executa()
         LeerXML_Nombre_De_software()
         LeerXML_base_de_datos()
-        MsgBox(Base_De_datos.ToString)
+        'MsgBox(Base_De_datos.ToString)
         Dim miCarpeta As String = "Copias_de_Seguridad_de_" & txtsoftware
         If My.Computer.FileSystem.DirectoryExists(txtRuta.Text & miCarpeta) Then
         Else
@@ -287,7 +287,30 @@ Public Class BackUp
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        If (acaba = True) Then
 
+
+            Me.Button2.Enabled = True
+
+            Me.Button2.Refresh()
+
+            'PicBox.Visible = False
+            PictureBox1.Visible = False
+            Panel1.Enabled = True
+            Timer1.Enabled = False
+            lbldirectorio.Visible = True
+            lbldirectorio.Text = "Copia Guardada en: " & ruta
+
+            Panel2.Visible = True
+            txtRuta.BackColor = Color.White
+            'editar_Empresa_copia_de_seguridad()
+            'MOSTRAR_cajas_por_serial()
+            Try
+                'lblfecha.Text = datalistado_cajas.SelectedCells.Item(9).Value
+            Catch ex As Exception
+
+            End Try
+        End If
     End Sub
     Sub editar_Empresa_copia_de_seguridad()
 
