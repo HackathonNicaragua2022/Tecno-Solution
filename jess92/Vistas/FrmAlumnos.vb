@@ -244,6 +244,13 @@ Public Class FrmAlumnos
             Me.BtnCorregirMatricula.Visible = False
             TabControl1.TabPages.Item(2).Enabled = False
             TabControl1.TabPages.Item(3).Enabled = False
+            Me.chkEliminar.Enabled = False
+            Me.BtnM_Inicial.Visible = False
+        ElseIf Acceso = "Editor" Then
+            EliminarMatriculaToolStripMenuItem.Enabled = False
+            EditarMatrículaToolStripMenuItem.Enabled = False
+            Me.chkEliminar.Enabled = False
+            Me.BtnM_Inicial.Visible = False
         End If
     End Sub
 

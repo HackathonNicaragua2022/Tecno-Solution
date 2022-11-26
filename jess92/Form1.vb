@@ -313,7 +313,7 @@ Public Class Form1
             Me.IpPrincipal.Text = ClientIP
             Dim stmLogo As New MemoryStream(Logo_Empresa)
             Me.PbLogo.Image = Image.FromStream(stmLogo)
-            Me.LblMainTitle.Text = Empresa + " (" + ClientIP + ")"
+            Me.LblMainTitle.Text = Empresa '+ " (" + ClientIP + ")"
 
             If Metodo_Ingreso_de_Nota = String.Empty Then
                 Mostrar_Logo()
@@ -324,18 +324,29 @@ Public Class Form1
                 If Acceso = "Administrador" Then
                     LblResumen.Text = Acceso.Trim + " del Sistema"
                     Button20.Visible = True
-                Else
+                ElseIf Acceso.Trim.Equals("Director") Then
+                    LblResumen.Text = Acceso.Trim + " del Centro educativo"
+                    BtnConfig.Visible = True
+                ElseIf Acceso.Trim.Equals("Director") Then
                     LblResumen.Text = Acceso.Trim + " del Centro educativo"
                     BtnConfig.Visible = False
                     Button20.Visible = False
                 End If
                 PbConfiguracion.Visible = True
-            Else
+            ElseIf Acceso.Trim.Equals("Docente") Then
                 Panel7.Visible = False
                 Panel12.Visible = False
                 PnlRendimiento.Visible = False
                 LblResumen.Text = Acceso.Trim + " de " + UserGrado.Trim.ToLower + " grado " + UserSeccion + " " + UserModalidad.Trim
                 PbConfiguracion.Visible = False
+                BtnConfig.Visible = False
+            ElseIf Acceso.Trim.Equals("Editor") Then
+                Panel7.Visible = False
+                Panel12.Visible = False
+                PnlRendimiento.Visible = False
+                LblResumen.Text = Acceso.Trim + " de Información del Centro"
+                PbConfiguracion.Visible = False
+                BtnConfig.Visible = False
             End If
 
             lblPc.Text = ClientName
@@ -866,10 +877,14 @@ Public Class Form1
 
         Return Id_Empresa
     End Function
-
+    Dim Utilidades As New Utilidades
     Private Sub BtnConexion_Click(sender As Object, e As EventArgs) Handles BtnConexion.Click
-        conexion_manual.ShowDialog()
-        Me.Hide()
+        If Acceso.Equals("Administrador") Then
+            conexion_manual.ShowDialog()
+            Me.Hide()
+        Else
+            Utilidad.Mensaje("El " + Acceso + " no cuenta con los privilejios necesarios para esta acción.", True)
+        End If
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click

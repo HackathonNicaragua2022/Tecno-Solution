@@ -942,7 +942,7 @@ Partial Class FrmAlumnos
         Me.BtnExportar.HoverBackgroundColor = System.Drawing.Color.Black
         Me.BtnExportar.HoverTextColor = System.Drawing.Color.White
         Me.BtnExportar.ImagePosition = UIDC.UI_CustomButton.imgPosition.Left
-        Me.BtnExportar.Location = New System.Drawing.Point(955, 64)
+        Me.BtnExportar.Location = New System.Drawing.Point(-16, 64)
         Me.BtnExportar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnExportar.Name = "BtnExportar"
         Me.BtnExportar.Size = New System.Drawing.Size(43, 41)
@@ -1087,7 +1087,7 @@ Partial Class FrmAlumnos
         Me.Lbltitulo.AutoSize = True
         Me.Lbltitulo.Font = New System.Drawing.Font("Roboto Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lbltitulo.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.Lbltitulo.Location = New System.Drawing.Point(580, 9)
+        Me.Lbltitulo.Location = New System.Drawing.Point(657, 9)
         Me.Lbltitulo.Name = "Lbltitulo"
         Me.Lbltitulo.Size = New System.Drawing.Size(290, 33)
         Me.Lbltitulo.TabIndex = 30
@@ -1121,7 +1121,7 @@ Partial Class FrmAlumnos
         Me.TabControl1.Location = New System.Drawing.Point(7, 20)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1125, 717)
+        Me.TabControl1.Size = New System.Drawing.Size(1279, 717)
         Me.TabControl1.TabIndex = 32
         '
         'TabPage1
@@ -1132,7 +1132,7 @@ Partial Class FrmAlumnos
         Me.TabPage1.Location = New System.Drawing.Point(4, 27)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1117, 686)
+        Me.TabPage1.Size = New System.Drawing.Size(1271, 686)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Listado de Estudiantes"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -1583,7 +1583,7 @@ Partial Class FrmAlumnos
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(3, 3)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1094, 769)
+        Me.Panel2.Size = New System.Drawing.Size(1248, 769)
         Me.Panel2.TabIndex = 45
         '
         'PnMejorAlumno
@@ -1593,7 +1593,7 @@ Partial Class FrmAlumnos
         Me.PnMejorAlumno.Controls.Add(Me.Panel16)
         Me.PnMejorAlumno.Location = New System.Drawing.Point(9, 15)
         Me.PnMejorAlumno.Name = "PnMejorAlumno"
-        Me.PnMejorAlumno.Size = New System.Drawing.Size(1027, 342)
+        Me.PnMejorAlumno.Size = New System.Drawing.Size(56, 87)
         Me.PnMejorAlumno.TabIndex = 49
         Me.PnMejorAlumno.Visible = False
         '
@@ -1601,7 +1601,7 @@ Partial Class FrmAlumnos
         '
         Me.lblcontador.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblcontador.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.lblcontador.Location = New System.Drawing.Point(569, 163)
+        Me.lblcontador.Location = New System.Drawing.Point(-402, 163)
         Me.lblcontador.Name = "lblcontador"
         Me.lblcontador.Size = New System.Drawing.Size(433, 18)
         Me.lblcontador.TabIndex = 43
@@ -1622,7 +1622,7 @@ Partial Class FrmAlumnos
         Me.DtExcelenciaAcademica.Location = New System.Drawing.Point(23, 185)
         Me.DtExcelenciaAcademica.Name = "DtExcelenciaAcademica"
         Me.DtExcelenciaAcademica.ReadOnly = True
-        Me.DtExcelenciaAcademica.Size = New System.Drawing.Size(1004, 142)
+        Me.DtExcelenciaAcademica.Size = New System.Drawing.Size(33, 0)
         Me.DtExcelenciaAcademica.TabIndex = 36
         '
         'DataGridViewCheckBoxColumn2
@@ -1650,7 +1650,7 @@ Partial Class FrmAlumnos
         Me.Panel16.Controls.Add(Me.Label9)
         Me.Panel16.Location = New System.Drawing.Point(23, 21)
         Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(1004, 117)
+        Me.Panel16.Size = New System.Drawing.Size(33, 117)
         Me.Panel16.TabIndex = 35
         '
         'Panel17
@@ -1685,7 +1685,7 @@ Partial Class FrmAlumnos
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.ForeColor = System.Drawing.Color.White
         Me.Button10.Image = Global.Ctrl_Estudiantil.My.Resources.Resources.Close
-        Me.Button10.Location = New System.Drawing.Point(965, 9)
+        Me.Button10.Location = New System.Drawing.Point(-6, 9)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(30, 29)
         Me.Button10.TabIndex = 32
@@ -1949,7 +1949,7 @@ Partial Class FrmAlumnos
         Me.Panel6.Controls.Add(Me.PictureBox2)
         Me.Panel6.Controls.Add(Me.DtMatricula)
         Me.Panel6.Controls.Add(Me.Label4)
-        Me.Panel6.Location = New System.Drawing.Point(83, 340)
+        Me.Panel6.Location = New System.Drawing.Point(160, 340)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(931, 254)
         Me.Panel6.TabIndex = 45
@@ -2033,7 +2033,7 @@ Partial Class FrmAlumnos
         Me.Panel5.Controls.Add(Me.TxtBusquedaApellidos)
         Me.Panel5.Controls.Add(Me.Panel4)
         Me.Panel5.Controls.Add(Me.TxtBusquedaNombre)
-        Me.Panel5.Location = New System.Drawing.Point(83, 15)
+        Me.Panel5.Location = New System.Drawing.Point(160, 15)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(931, 305)
         Me.Panel5.TabIndex = 0
@@ -2069,7 +2069,7 @@ Partial Class FrmAlumnos
         Me.TabPage3.Location = New System.Drawing.Point(4, 27)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1117, 686)
+        Me.TabPage3.Size = New System.Drawing.Size(1271, 686)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Transición de Matricula"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -2091,7 +2091,7 @@ Partial Class FrmAlumnos
         Me.PnOpcionesMatricula.Controls.Add(Me.Label24)
         Me.PnOpcionesMatricula.Controls.Add(Me.Label19)
         Me.PnOpcionesMatricula.Controls.Add(Me.Label17)
-        Me.PnOpcionesMatricula.Location = New System.Drawing.Point(109, 227)
+        Me.PnOpcionesMatricula.Location = New System.Drawing.Point(186, 227)
         Me.PnOpcionesMatricula.Name = "PnOpcionesMatricula"
         Me.PnOpcionesMatricula.Size = New System.Drawing.Size(524, 387)
         Me.PnOpcionesMatricula.TabIndex = 2
@@ -2285,7 +2285,7 @@ Partial Class FrmAlumnos
         Me.Panel8.Controls.Add(Me.Panel10)
         Me.Panel8.Location = New System.Drawing.Point(20, 43)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(1078, 622)
+        Me.Panel8.Size = New System.Drawing.Size(1232, 622)
         Me.Panel8.TabIndex = 1
         '
         'LblBuscar_Al_Cambiar
@@ -2293,7 +2293,7 @@ Partial Class FrmAlumnos
         Me.LblBuscar_Al_Cambiar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblBuscar_Al_Cambiar.Font = New System.Drawing.Font("Roboto Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblBuscar_Al_Cambiar.ForeColor = System.Drawing.Color.DimGray
-        Me.LblBuscar_Al_Cambiar.Location = New System.Drawing.Point(911, 25)
+        Me.LblBuscar_Al_Cambiar.Location = New System.Drawing.Point(1065, 25)
         Me.LblBuscar_Al_Cambiar.Name = "LblBuscar_Al_Cambiar"
         Me.LblBuscar_Al_Cambiar.Size = New System.Drawing.Size(103, 40)
         Me.LblBuscar_Al_Cambiar.TabIndex = 9
@@ -2379,7 +2379,7 @@ Partial Class FrmAlumnos
         Me.DtMatriculaAnterior.Location = New System.Drawing.Point(23, 156)
         Me.DtMatriculaAnterior.Name = "DtMatriculaAnterior"
         Me.DtMatriculaAnterior.ReadOnly = True
-        Me.DtMatriculaAnterior.Size = New System.Drawing.Size(1033, 446)
+        Me.DtMatriculaAnterior.Size = New System.Drawing.Size(1187, 446)
         Me.DtMatriculaAnterior.TabIndex = 2
         '
         'ChkMarcar
@@ -2409,7 +2409,7 @@ Partial Class FrmAlumnos
         Me.Panel10.Controls.Add(Me.Label12)
         Me.Panel10.Location = New System.Drawing.Point(23, 68)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(1033, 50)
+        Me.Panel10.Size = New System.Drawing.Size(1187, 50)
         Me.Panel10.TabIndex = 9
         '
         'Button2
@@ -2422,7 +2422,7 @@ Partial Class FrmAlumnos
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button2.Location = New System.Drawing.Point(804, 6)
+        Me.Button2.Location = New System.Drawing.Point(958, 6)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(112, 42)
         Me.Button2.TabIndex = 8
@@ -2440,7 +2440,7 @@ Partial Class FrmAlumnos
         Me.BtnMatricular.ForeColor = System.Drawing.Color.White
         Me.BtnMatricular.Image = CType(resources.GetObject("BtnMatricular.Image"), System.Drawing.Image)
         Me.BtnMatricular.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.BtnMatricular.Location = New System.Drawing.Point(918, 6)
+        Me.BtnMatricular.Location = New System.Drawing.Point(1072, 6)
         Me.BtnMatricular.Name = "BtnMatricular"
         Me.BtnMatricular.Size = New System.Drawing.Size(104, 42)
         Me.BtnMatricular.TabIndex = 3
@@ -2453,7 +2453,7 @@ Partial Class FrmAlumnos
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Roboto Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(162, 20)
+        Me.Label12.Location = New System.Drawing.Point(316, 20)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(112, 17)
         Me.Label12.TabIndex = 5
@@ -2612,7 +2612,7 @@ Partial Class FrmAlumnos
         Me.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCerrar.ForeColor = System.Drawing.Color.White
         Me.BtnCerrar.Image = Global.Ctrl_Estudiantil.My.Resources.Resources.Close
-        Me.BtnCerrar.Location = New System.Drawing.Point(1097, 20)
+        Me.BtnCerrar.Location = New System.Drawing.Point(1251, 20)
         Me.BtnCerrar.Name = "BtnCerrar"
         Me.BtnCerrar.Size = New System.Drawing.Size(30, 29)
         Me.BtnCerrar.TabIndex = 31
@@ -2624,7 +2624,7 @@ Partial Class FrmAlumnos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1146, 749)
+        Me.ClientSize = New System.Drawing.Size(1300, 749)
         Me.Controls.Add(Me.BtnCerrar)
         Me.Controls.Add(Me.Lbltitulo)
         Me.Controls.Add(Me.TabControl1)

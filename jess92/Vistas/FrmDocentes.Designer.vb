@@ -1630,7 +1630,7 @@ Partial Class FrmDocentes
         'CmbRol
         '
         Me.CmbRol.FormattingEnabled = True
-        Me.CmbRol.Items.AddRange(New Object() {"Administrador", "Docente", "Secretario", "Director", "Sub Director"})
+        Me.CmbRol.Items.AddRange(New Object() {"Administrador", "Docente", "Director", "Sub Director", "Editor"})
         Me.CmbRol.Location = New System.Drawing.Point(610, 335)
         Me.CmbRol.Name = "CmbRol"
         Me.CmbRol.Size = New System.Drawing.Size(144, 26)

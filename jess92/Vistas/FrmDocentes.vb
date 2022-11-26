@@ -268,22 +268,27 @@ Public Class FrmDocentes
     End Sub
 
     Private Sub FrmDocentes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.TxtBusquedaNombre.Text = UserName
-        IsNuevo = False
-        IsEditar = False
-        Limpiar_Txt()
-        Botones()
-        Habilitar_TXT(False)
-        Buscar()
-        Maquillaje()
-        Roles()
-        Utilidades.Alternar_Color_DatagridView(Me.Datalistado)
-        Utilidades.Alternar_Color_DatagridView(Me.Dtasignaturas)
-        Utilidades.Alternar_Color_DatagridView(Me.DtAsignaciones)
-        Utilidades.Alternar_Color_DatagridView(Me.DtListadoAsignaturas)
-        Utilidades.Alternar_Color_DatagridView(Me.DtGradoAsignacion)
-        ' Buscar()
-        Maquillaje()
+        Try
+            Me.TxtBusquedaNombre.Text = UserName
+            IsNuevo = False
+            IsEditar = False
+            Limpiar_Txt()
+            Botones()
+            Habilitar_TXT(False)
+            Buscar()
+            Maquillaje()
+            Roles()
+            Utilidades.Alternar_Color_DatagridView(Me.Datalistado)
+            Utilidades.Alternar_Color_DatagridView(Me.Dtasignaturas)
+            Utilidades.Alternar_Color_DatagridView(Me.DtAsignaciones)
+            Utilidades.Alternar_Color_DatagridView(Me.DtListadoAsignaturas)
+            Utilidades.Alternar_Color_DatagridView(Me.DtGradoAsignacion)
+            ' Buscar()
+            Maquillaje()
+        Catch ex As Exception
+
+        End Try
+
     End Sub
     Sub Roles()
         Select Case Acceso
@@ -296,10 +301,12 @@ Public Class FrmDocentes
                 Me.TabPage2.Enabled = False
                 Me.BtnAsignarAsignaturas.Enabled = False
             Case "Director"
-                Me.Opciones1.Items(0).Enabled = False
+                Exit Select
+            Case " Sub Director"
+                'Me.Opciones1.Items(0).Enabled = False
                 Me.Opciones1.Items(1).Enabled = False
-                Me.TabPage2.Enabled = False
-            Case "Secretario"
+                BtnEditar.Enabled = False
+            Case "Editor"
                 Me.Opciones1.Items(0).Enabled = False
                 Me.Opciones1.Items(1).Enabled = False
                 Me.Opciones1.Items(3).Enabled = False
@@ -635,7 +642,12 @@ Public Class FrmDocentes
             Me.TxtPass.Text = Me.Datalistado.CurrentRow.Cells(7).Value
             Me.CmbRol.Text = Me.Datalistado.CurrentRow.Cells(8).Value
             Me.TxtTelefono.Text = Me.Datalistado.CurrentRow.Cells(9).Value
-            Me.BtnEditar.Enabled = True
+            If Acceso.Equals("Director") = True Or Acceso.Equals("Administrador") = True Then
+                Me.BtnEditar.Enabled = True
+            Else
+                Me.BtnEditar.Enabled = False
+            End If
+
             TabControl1.SelectTab(1)
         Catch ex As Exception
             Me.BtnEditar.Enabled = True
